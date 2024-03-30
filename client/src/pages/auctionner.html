@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Auctionner</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="../style/auctionner.css" rel="stylesheet" type="text/css"/>  
+  </head>
+
+  <body>
+    <a href="/home">Home</a>
+    <header>
+      <div class="auctionner">
+        <h1>Auctionner</h1>
+      </div>
+    </header>
+    <main>
+      <div>
+        <p><span id="informations"></span> <span id='encherisseur'></span> <span id="infotxt"></span> <span id="encherePrice"></span></p>
+        <div id="fin"></div>
+      </div>
+
+      <p id='enchereStatus'></p>
+
+      <div class="enchere">
+        <div class="objet">
+          <p>Objet : <input type="text" id="description" placeholder="Saisissez la description de votre objet"></p>
+        </div>
+        <div class="prix">
+          <p>Prix de départ <input type="number" id="prixDepart" min="0" value="0" step="5"></p>
+        </div>
+        <div class="prixactuel>">
+          <p>Montant actuel enchère <span id="prixactuel"></span></p>
+        </div>
+        <div class="buttons-container">
+          <button id="start"><img src="../images/start.jpg" width="40" alt="start"></button>
+          <button id="terminer"><img src="../images/marteau.jpg" width="40" alt="bid"></button> 
+        </div>
+      </div>
+
+    </main>
+  </body>
+
+</html>

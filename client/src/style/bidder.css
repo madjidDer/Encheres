@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+a {
+  color: #ffdd00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  margin-bottom: 20px;
+}
+
+a:hover {
+  color: #ffee88;
+  transform: scale(1.05);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  background: -webkit-linear-gradient(45deg, #ffdd55, #ff5522);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bvn, #enchereInfo, #fin {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  backdrop-filter: blur(5px);
+  width: 70%;
+  text-align: center;
+}
+
+.auction-details {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.auction-details p {
+  margin: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background: linear-gradient(45deg, #ffdd55, #ff5522);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  flex: 0 1 auto;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffee88, #ffaa00);
+  transition: all 0.4s ease;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+#euros {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  header, .bvn, #enchereInfo, #fin, .auction-details {
+    width: 90%;
+  }
+
+  .auction-details {
+    justify-content: center;
+  }
+}

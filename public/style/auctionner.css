@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    flex-direction: column !important;
+  }
+  
+  a {
+    color: #ffdd00 !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+    display: inline-block !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px) !important;
+    margin-bottom: 20px !important;
+  }
+  
+  a:hover {
+    color: #ffee88 !important;
+    transform: scale(1.05) !important;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px) !important;
+    width: 80% !important;
+    text-align: center !important;
+  }
+  
+  h1 {
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-size: 24px !important;
+    background: -webkit-linear-gradient(45deg, #ffdd55, #ff5522) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  
+  main {
+    width: 80% !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px) !important;
+    margin-top: 10px !important;
+  }
+  
+  .objet, .prix, .prixactuel {
+    margin-bottom: 15px !important;
+  }
+  
+  input[type="text"], input[type="number"] {
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    color: #555 !important;
+    padding: 10px !important;
+    width: calc(100% - 22px) !important; /* Adjust input width */
+  }
+  
+  .buttons-container {
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-top: 20px !important;
+  }
+  
+  button {
+    background: linear-gradient(45deg, #ffdd55, #ff5522) !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+  }
+  
+  button::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(45deg, #ffee88, #ffaa00) !important;
+    transition: all 0.4s ease !important;
+    z-index: 1 !important;
+    border-radius: 5px !important;
+  }
+  
+  button:hover::before {
+    left: 100% !important;
+  }
+  
+  button img {
+    vertical-align: middle !important;
+  }
+  
+  button:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+  }
+  
+  @media (max-width: 768px) {
+    body, header, main {
+      width: 90% !important;
+    }
+  }

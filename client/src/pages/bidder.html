@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bidder</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../scripts/bidder.js"></script>
+    <link rel="stylesheet" href="./style/bidder.css">
+  </head>
+
+  <body>
+    <div>
+      <a href="./home">Home</a>
+    </div>
+    <header>
+      <h1>Enchérisseur</h1>
+      <div class="bvn">
+        <p id="fin"><span id='offre'></span></p>      
+      </div>
+      
+    </header>
+    <p id='enchereInfo'></p> 
+    <main>
+      <div class="auction-details">
+        <p>Prix actuel : <span id="current-price"></span>€</p>
+        <p id="message">Mise au enchère : <span id="item"></span></p>
+        <button id="10euro"><div id="euros">10 €</div></button>
+        <button id="50euro"> <div id="euros">50 €</div> </button>
+        <button id="100euro"> <div id="euros">100 €</div> </button>
+      </div>
+    </main>
+  </body>
+  </html>
+  
+  
